@@ -1,0 +1,17 @@
+.content {
+  margin-left: 7%;
+  margin-top: 3%;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ae0e00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 130px;
+  height: 50px;
+  font-size: 16px;
+}
