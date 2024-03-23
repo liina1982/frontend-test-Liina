@@ -13,10 +13,10 @@ interface ConfirmModalProps {
 const ConfirmDeleteModal = ({ isOpen, onClose }: ConfirmModalProps) => {
   const [deleteButtonDisabled, setDeleteButtonDisabled] = useState(true);
   const portalDiv = document.getElementById('portal') as HTMLElement;
-  
+
   useEffect(() => {
     setDeleteButtonDisabled(true);
-      const timerId = setTimeout(() => {
+    const timerId = setTimeout(() => {
       setDeleteButtonDisabled(false);
     }, 2000);
     return () => clearTimeout(timerId);
@@ -27,7 +27,7 @@ const ConfirmDeleteModal = ({ isOpen, onClose }: ConfirmModalProps) => {
     onClose();
   }
 
-  if(!isOpen){
+  if (!isOpen) {
     return null;
   }
 
